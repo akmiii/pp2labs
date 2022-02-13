@@ -2,7 +2,7 @@
 
 s = input().split()
 
-def getRes(s):
+def getRev(s):
     l = []
     for i in s:
         if i == len(s):
@@ -11,4 +11,4 @@ def getRes(s):
             l.append(i)
     return(l[::-1])
 
-print(*getRes(s))
+print(*getRev(s))

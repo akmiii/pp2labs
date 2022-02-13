@@ -4,6 +4,11 @@ from random import randint
 num = randint(1, 20)
 
 def game():
+    print("Hello! What is your name?")
+    name = input()
+    print()
+    print("Well,", name+',', "I am thinking of a number between 1 and 20")
+    print("Take a guess.")
     cnt = 0
     a = int(input())
     while a != num:
@@ -23,9 +28,4 @@ def game():
     else:
         print("Good job,", name,"! You guessed my number in", cnt+1, "guesses!") 
 
-print("Hello! What is your name?")
-name = input()
-print()
-print("Well,", name+',', "I am thinking of a number between 1 and 20")
-print("Take a guess.")
 game()

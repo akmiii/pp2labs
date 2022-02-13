@@ -4,6 +4,7 @@ from math import pi
 
 r = int(input())
 
-def getRes(r):
+def getVol(r):
     return (4*pi*(r**3) / 3)
-print(getRes(r))
+    
+print(getVol(r))

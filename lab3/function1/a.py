@@ -2,7 +2,7 @@
 
 num = int(input())
 
-def getRes(n):
+def gram_to_ounces(n):
     return(n * 28.3495231)
 
-print(getRes(num))
+print(gram_to_ounces(num))
