@@ -7,3 +7,7 @@ def mult(a, b):
 l = list(map(int, input().split()))
 
 print(reduce(mult, l))
+
+#2 variant
+a = input().replace(" ", "*")
+print(eval(a))
