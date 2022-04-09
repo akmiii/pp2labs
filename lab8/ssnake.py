@@ -150,6 +150,7 @@ while restart:
             FPS += 1
             cnt = 0
 
+        #Winning condition
         if level == 5:
             win = True
 
@@ -169,28 +170,28 @@ while restart:
         tapping = font_small.render(f'TAP SPACE TO RESTART', True, BLACK)
 
         while lose or win:
-                pygame.draw.rect(screen, WHITE, (100, 100, 200, 200))
+            pygame.draw.rect(screen, WHITE, (100, 100, 200, 200))
 
-                for event in pygame.event.get():
-                    if event.type == pygame.QUIT:
-                        restart = False
-                        finished = True
-                        lose = False
-                        win = False
-                    if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-                        lose = False
-                        win = False
-                        finished = True
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    restart = False
+                    finished = True
+                    lose = False
+                    win = False
+                if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+                    lose = False
+                    win = False
+                    finished = True
 
-                if lose:
-                    screen.blit(losing, (WIDTH // 2 - 84 , HEIGHT // 2 - 50))
-                    screen.blit(tapping, (WIDTH // 2 - 74 , HEIGHT // 2 - 30))
+            if lose:
+                screen.blit(losing, (WIDTH // 2 - 84 , HEIGHT // 2 - 50))
+                screen.blit(tapping, (WIDTH // 2 - 74 , HEIGHT // 2 - 30))
 
-                if win:
-                    screen.blit(winning, (WIDTH // 2 - 84 , HEIGHT // 2 - 50))
-                    screen.blit(tapping, (WIDTH // 2 - 74 , HEIGHT // 2 - 30))
+            if win:
+                screen.blit(winning, (WIDTH // 2 - 84 , HEIGHT // 2 - 50))
+                screen.blit(tapping, (WIDTH // 2 - 74 , HEIGHT // 2 - 30))
 
-                pygame.display.flip()
+            pygame.display.flip()
 
         #Texts
         score_text = font_big.render(f'SCORE: {score}', True, WHITE)
