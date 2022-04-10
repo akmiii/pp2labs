@@ -154,6 +154,8 @@ while restart:
             if event.type == pygame.QUIT:
                 finished = True
                 restart = False
+
+            #restart by tapping the space   
             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 finished = True
 
@@ -210,6 +212,8 @@ while restart:
                     finished = True
                     lose = False
                     win = False
+
+                #restart by tapping the space   
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                     lose = False
                     win = False
