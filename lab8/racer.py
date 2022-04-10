@@ -187,7 +187,7 @@ while restart:
                 SCORE += 1
                 coins.add(Coin())
 
-        #To not having the double coins
+        #To not having the double cars
         for enemy in enemies:
             for enemy2 in enemies:
                 if enemy != enemy2 and pygame.sprite.collide_rect(enemy, enemy2): #Collision detection between two sprites, using rects
