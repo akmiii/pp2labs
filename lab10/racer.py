@@ -2,7 +2,7 @@ import pygame
 from random import randint, choice
 import time
 import psycopg2
-from lab10.config import params
+from config import params
 
 name = input('Enter your name: ')
 
