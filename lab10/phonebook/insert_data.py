@@ -1,5 +1,5 @@
 import psycopg2, csv
-from lab10.config import params
+from lab10.racer.config import params
 
 db = psycopg2.connect(**params)
 
