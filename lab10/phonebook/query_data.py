@@ -1,5 +1,5 @@
 import psycopg2
-from config import params
+from lab10.config import params
 
 db = psycopg2.connect(**params)
 
