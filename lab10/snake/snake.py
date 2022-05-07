@@ -1,6 +1,6 @@
 import pygame, psycopg2, time
 from random import randrange, choice
-from lab10.racer.config import params
+from config import params
 
 #Name of the player
 name = input("Enter the name: ")
